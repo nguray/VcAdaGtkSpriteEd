@@ -1,0 +1,17 @@
+with "gtkada.gpr";
+project gtk_sprite_ed is
+
+   for Source_Dirs use (".");
+   for Object_Dir use "obj";
+   for Main use ("gtk_sprite_ed.adb");
+   for Exec_Dir use ".";
+
+   --package Compiler renames GtkAda.Compiler;
+   package Compiler is
+      -- This flag is for strings to be interpreted in UTF-8 by
+      -- compiler.
+      for Default_Switches ("Ada") use ("-g","-gnat2012","-IC:/msys64/mingw64/include/gtkada");
+
+   end Compiler;
+
+end gtk_sprite_ed;

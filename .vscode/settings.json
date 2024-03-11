@@ -1,0 +1,8 @@
+{
+    "ada.projectFile": "gtk_sprite_ed.gpr",
+    "gpr.trace.server": "verbose",
+    "ada.scenarioVariables": {
+    
+    },
+    "cmake.configureOnOpen": true
+}
