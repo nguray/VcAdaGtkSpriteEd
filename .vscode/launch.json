@@ -10,7 +10,7 @@
             "request": "launch",
             "targetArchitecture": "x64",
             "cwd": "${workspaceFolder}",
-            "program": "${workspaceFolder}/gtk_sprite_ed.exe",
+            "program": "${workspaceFolder}/gtk_sprite_ed",
             "stopAtEntry": false,
             "externalConsole": false,
             "args": [],
