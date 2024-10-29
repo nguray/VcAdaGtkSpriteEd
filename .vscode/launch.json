@@ -15,7 +15,7 @@
             "externalConsole": false,
             "args": [],
             "MIMode": "gdb",
-            "preLaunchTask": "ada: Build current project",
+            "preLaunchTask": "spark: build project",
             "setupCommands": [
                 {
                     "description": "Catch all Ada exceptions",

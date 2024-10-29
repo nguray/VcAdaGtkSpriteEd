@@ -2,25 +2,22 @@
 	"version": "2.0.0",
 	"tasks": [
 		{
-			"type": "gprbuild",
-			"projectFile": "${config:ada.projectFile}",
+			"type": "spark",
+			"command": "gprbuild",
+			"args": [
+				"${command:ada.gprProjectArgs}",
+				"-j0",
+				"-cargs",
+				"-gnatef"
+			],
 			"problemMatcher": [
 				"$ada"
 			],
+			"label": "spark: build project",
 			"group": {
 				"kind": "build",
 				"isDefault": true
-			},
-			"label": "ada: Build current project"
-		},
-		{
-			"type": "gprclean",
-			"projectFile": "${config:ada.projectFile}",
-			"problemMatcher": [
-				"$ada"
-			],
-			"group": "build",
-			"label": "ada: Clean current project"
+			}
 		}
 	]
 }
