@@ -10,7 +10,8 @@ project gtk_sprite_ed is
    package Compiler is
       -- This flag is for strings to be interpreted in UTF-8 by
       -- compiler.
-      for Default_Switches ("Ada") use ("-g","-gnat2012","-IC:/msys64/mingw64/include/gtkada");
+      -- for Default_Switches ("Ada") use ("-g","-gnat2012","-IC:/msys64/mingw64/include/gtkada");
+      for Default_Switches ("Ada") use ("-g","-gnat2012");
 
    end Compiler;
 
